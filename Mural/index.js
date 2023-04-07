@@ -7,6 +7,7 @@ const apiRouter = require("./routes/api");
 app.use("/api", apiRouter)
 app.use(express.static(path.join(__dirname, "public")))
 
+
 app.listen(PORT, () =>{
     console.log(`servidor rodando na porta ${PORT}`);
 })

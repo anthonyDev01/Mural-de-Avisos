@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="icon" type="image/png" href="./images/post.png"/>
+    <script src="scripts/script.js"></script>
+    <title>Mural</title>
 </head>
 <body>
-    
+    <main>
+        <div class="newPostContainer">
+            <div id="postContainer">
+                <textarea maxlength="120" id="title" placeholder="Title"></textarea>
+                <div class="headLine"></div>
+                <textarea maxlength="500" id="description" placeholder="description"></textarea>   
+            </div>
+            
+            <button onclick="newPost()" class="full-rounded btns">
+                <span>Adicionar</span>
+                <div class="border full-rounded"></div>
+            </button>
+        </div>
+        
+        <div class="muralContainer">
+            <h2>Mural</h2>
+            <div id="posts"></div>   
+        </div>
+    </main>
+
+    <dialog class="modal">
+        <h2>Campos Invalidos</h2>
+        <button onclick="fechar()" class="full-rounded btns">
+            <span>Fechar</span>
+            <div class="border full-rounded"></div>
+        </button>
+    </dialog>
 </body>
 </html>
